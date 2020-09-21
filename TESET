@@ -1,0 +1,89 @@
+
+model User {
+  id Int @unique  
+  username String @unique
+  email String @unique
+  firstName String? @default(value:"")
+  lastName String?
+  bio String?
+  // followers User @relation(fields: [id], references: [id])
+  // following User[] @relation(name: "FollowRelation")
+  // posts Post[]
+  // likes Like[]
+  // comments Comment[]
+
+}
+// model Post {
+  
+//   location String?
+//   caption String
+//   user User
+//   files File[]
+//   likes Like[]
+//   comments Comments[]
+// }
+
+// model Like {
+//   user User
+//   post Post
+
+// }
+
+// model Comment {
+//   text String
+//   user User
+//   post Post
+
+// }
+
+// model File {
+//   url  String
+//   post Post
+
+// }
+
+
+// model User {
+//   id Int @unique  
+//   username String @unique
+//   email String @unique
+//   firstName String? @default(value:"")
+//   lastName String?
+//   bio String?
+//   followers User[] @relation(name: "FollowRelation")
+//   following User[] @relation(name: "FollowRelation")
+//   posts Post[]
+//   likes Like[]
+//   comments Comment[]
+
+// }
+
+// model Post {
+  
+//   location String?
+//   caption String
+//   user User
+//   files File[]
+//   likes Like[]
+//   comments Comments[]
+// }
+
+// model Like {
+//   user User
+//   post Post
+
+// }
+
+// model Comment {
+//   text String
+//   user User
+//   post Post
+
+// }
+
+// model File {
+//   url  String
+//   post Post
+
+// }
+

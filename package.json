@@ -1,0 +1,35 @@
+{
+  "name": "rinstagram",
+  "version": "1.0.0",
+  "description": "rinstagram",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js",
+    "deploy": "prisma deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rabiori88/Rinstagram.git"
+  },
+  "author": "rabiori",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rabiori88/Rinstagram/issues"
+  },
+  "homepage": "https://github.com/rabiori88/Rinstagram#readme",
+  "dependencies": {
+    "@babel/preset-env": "^7.11.5",
+    "apollo-server": "^2.17.0",
+    "dotenv": "^8.2.0",
+    "graphql-tools": "^6.2.3",
+    "graphql-yoga": "^1.18.3",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/node": "^7.10.5",
+    "@prisma/cli": "^2.7.1",
+    "nodemon": "^2.0.4"
+  }
+}
